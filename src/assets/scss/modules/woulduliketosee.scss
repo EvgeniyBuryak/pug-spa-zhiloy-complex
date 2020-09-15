@@ -1,3 +1,5 @@
+@import "../utils/vars";
+
 .section_indent-down_zero {
     padding-bottom: 0;
 }
@@ -7,6 +9,10 @@
     display: grid;
     grid-template-rows: 180px 200px 180px;
     grid-template-columns: 405px 535px 35px 540px 405px;
+
+    @media screen and (max-width: $desktopWidth) {
+        grid-template-columns: 1fr 535px 35px 540px 1fr;
+    }
 }
 
 .background-wouldulike {

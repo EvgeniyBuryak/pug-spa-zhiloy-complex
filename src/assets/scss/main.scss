@@ -70,20 +70,22 @@ section, .section {
 }
 
 .container {
-  width: 100%;
-  flex: 0 0 auto;
-  position: relative;
-  margin: 0 auto;
-  max-width: $desktopWidth;
-  @media screen and (max-width: $smDesktopWidth) {
-    max-width: $tableWidth;
-  }
-  @media screen and (max-width: $tableWidth) {
-    max-width: $phoneWidth;
-  }
-  @media screen and (max-width: $phoneWidth) {
-    max-width: $smPhoneWidth;
-  }
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    margin: 0 auto;
+    max-width: 57.8125%; // $desktopWidth;
+    @media screen and (max-width: $smDesktopWidth) {
+        max-width: 85.9375%; // $tableWidth;
+    }
+
+    @media screen and (max-width: $tableWidth) {
+        max-width: $phoneWidth;
+    }
+
+    @media screen and (max-width: $phoneWidth) {
+        max-width: $smPhoneWidth;
+    }
 }
 
 // Modules
