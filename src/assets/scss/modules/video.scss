@@ -4,11 +4,12 @@
 }
 
 .video__container {
-    width: 37.4479166667%;
+    display: grid;
+    grid-template-columns: 1fr 719px 1fr;
 }
 
 .video {
-    width: 100%;
+    grid-column: 2;
     height: 650px;
 }
 

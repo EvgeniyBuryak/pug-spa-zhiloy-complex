@@ -9,11 +9,13 @@
     grid-template-rows: 80px 180px 120px;
     grid-template-columns: 193px 133px 134px 124px;
     grid-column-gap: 70px;
-
     max-width: 41.3541666667%;
 
     @media screen and (max-width: $desktopWidth) {
-        max-width: 62.03125%;
+        max-width: 794px;
+    }
+
+    @media screen and (max-width: $smDesktopWidth) {
     }
 }
 
