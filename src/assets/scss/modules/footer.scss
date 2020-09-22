@@ -24,25 +24,22 @@ footer {
 }
 
 .footer__container {
-    //width: 57.8125%;
-    // if value "screen" set other @media, nothing don't work
-    @media screen and (max-width: $desktopWidth) {
-        //grid-template-columns: 1fr 201px 112px 116px 69px 124px 61px 137px 38px 102px 1fr;
-        grid-template-columns: 138px 122px 122px 243px;
-    }
-
-    @media screen and (max-width: $smDesktopWidth) {
-        //grid-template-columns: 1fr 181px 112px 106px 54px 114px 47px 127px 38px 92px 1fr;
-        grid-template-columns: 138px 122px 122px 243px;
-        grid-column-gap: 75px;
-        //max-width: 95%;
-    }
-
     height: 100%;
     display: grid;
     grid-template-columns: 138px 122px 122px 243px;
     grid-column-gap: 162px;
     grid-template-rows: 60px 152px 60px;
+
+    //width: 57.8125%;
+    // if value "screen" set other @media, nothing don't work
+    @media screen and (max-width: $desktopWidth) {
+        grid-template-columns: 138px 122px 122px 243px;
+    }
+
+    @media screen and (max-width: $smDesktopWidth) {
+        grid-template-columns: 138px 122px 122px 243px;
+        grid-column-gap: 75px;
+    }
 }
 
 .main-menu {

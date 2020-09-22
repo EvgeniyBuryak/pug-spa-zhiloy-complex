@@ -11,11 +11,8 @@
     grid-column-gap: 70px;
     max-width: 41.3541666667%;
 
-    @media screen and (max-width: $desktopWidth) {
+    @media screen and (max-width: $macAirDesktop) {
         max-width: 794px;
-    }
-
-    @media screen and (max-width: $smDesktopWidth) {
     }
 }
 
